@@ -53,6 +53,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
+Plug 'jacoborus/tender.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
@@ -66,6 +68,7 @@ Plug 'bling/vim-airline'
 Plug 'hdima/python-syntax'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-markdown'
+Plug 'unblevable/quick-scope'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 call plug#end()
@@ -76,4 +79,4 @@ syntax enable
 "colorscheme nord
 " colorscheme onedark
 " set background=dark
-colorscheme palenight
+colorscheme dracula

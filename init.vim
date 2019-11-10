@@ -25,7 +25,7 @@ set termguicolors
 
 " vim airline
 set laststatus=2
-" let g:airline_theme='one'
+"let g:airline_theme='one'
 
 " set background=dark
 
@@ -77,6 +77,7 @@ syntax enable
 
 " call colorsehemes after plug end
 "colorscheme nord
-" colorscheme onedark
-" set background=dark
-colorscheme dracula
+"colorscheme onedark
+"set background=dark
+" colorscheme dracula
+colorscheme molokai

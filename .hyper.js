@@ -9,10 +9,10 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 14,
+    fontSize: 16,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Droid Sans Mono for powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -118,7 +118,7 @@ module.exports = {
     plugins: [                                                                 
       "ip",                                                                    
       "cpu",                                                                   
-      "spotify"                                                                
+      "spotify"
      ]                                                                          
     },
 
@@ -168,7 +168,14 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperpower', 'gitrocket', 'hyper-spotify', 'hypercwd', 'hyper-statusline', 'hyper-dracula'],
+  plugins: [
+    'space-push',
+    'space-pull',
+    'hypercwd',
+    'hyperline',
+    'hyperterm-monokai',
+    "hyperterm-dibdabs"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

@@ -9,7 +9,7 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 16,
+    fontSize: 24,
 
     // font family with optional fallbacks
     fontFamily: '"Droid Sans Mono for powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
@@ -134,7 +134,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: '',
+    shell: '/bin/bash',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
@@ -169,11 +169,8 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'space-push',
-    'space-pull',
     'hypercwd',
-    'hyperline',
-    'hyperterm-monokai',
+    'hyper-dracula',
     "hyperterm-dibdabs"
   ],
 

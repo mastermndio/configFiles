@@ -45,6 +45,9 @@ map <C-n> :NERDTreeToggle<CR>
 " close a tab if only remaining window is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+set tags=tags
+autocmd BufWritePost *.py silent! !ctags -R --python-kinds=-i --languages=python 2&gt; /dev/null &amp;
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
@@ -61,6 +64,8 @@ Plug 'slim-template/vim-slim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-markdown'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'joshdick/onedark.vim'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 

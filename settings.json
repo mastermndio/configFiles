@@ -1,0 +1,96 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+
+    "profiles":
+    {
+        "defaults":
+        {
+            "fontSize": 16
+            // Put settings here that you want to apply to all profiles
+        },
+        "list":
+        [
+            {
+                // Make changes here to the powershell.exe profile
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl",
+                "colorScheme": "MaterialOcean"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [{
+        "name": "MaterialOcean",
+        "black": "#546e7a",
+        "red": "#ff5370",
+        "green": "#c3e88d",
+        "yellow": "#ffcb6b",
+        "blue": "#82aaff",
+        "purple": "#c792ea",
+        "cyan": "#89ddff",
+        "white": "#ffffff",
+        "brightBlack": "#546e7a",
+        "brightRed": "#ff5370",
+        "brightGreen": "#c3e88d",
+        "brightYellow": "#ffcb6b",
+        "brightBlue": "#82aaff",
+        "brightPurple": "#c792ea",
+        "brightCyan": "#89ddff",
+        "brightWhite": "#ffffff",
+        "background": "#0f111a",
+        "foreground": "#8f93a2"
+      },
+      {
+        "name": "Monokai Vivid",
+        "black": "#121212",
+        "red": "#fa2934",
+        "green": "#98e123",
+        "yellow": "#fff30a",
+        "blue": "#0443ff",
+        "purple": "#f800f8",
+        "cyan": "#01b6ed",
+        "white": "#ffffff",
+        "brightBlack": "#838383",
+        "brightRed": "#f6669d",
+        "brightGreen": "#b1e05f",
+        "brightYellow": "#fff26d",
+        "brightBlue": "#0443ff",
+        "brightPurple": "#f200f6",
+        "brightCyan": "#51ceff",
+        "brightWhite": "#ffffff",
+        "background": "#121212",
+        "foreground": "#f9f9f9"
+      }],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
+}

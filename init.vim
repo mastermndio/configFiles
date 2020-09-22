@@ -49,6 +49,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 set tags=tags
 autocmd BufWritePost *.py silent! !ctags -R --python-kinds=-i --languages=python 2&gt; /dev/null &amp;
 
+source $HOME/.config/nvim/plug-config/coc.vim
+
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -60,7 +62,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'jacoborus/tender.vim'
 Plug 'tpope/vim-surround'
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -75,6 +77,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'unblevable/quick-scope'
 Plug 'connorholyday/vim-snazzy'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 

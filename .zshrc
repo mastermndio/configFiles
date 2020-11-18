@@ -18,7 +18,7 @@ ZSH_THEME=""
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -114,12 +114,5 @@ prompt pure
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 LS_COLORS='ow=01;36;40'
 export LS_COLORS
-
-alias mgmt='export AWS_PROFILE=mgmt'
-alias lower='export AWS_PROFILE=lower'
-alias upper='export AWS_PROFILE=upper'
-
-
-source /mnt/c/Users/Aaron\ Brooks/Documents/SBAGOV/sba-aws-helpers/manage-mfa.sh
-source '/mnt/c/Users/Aaron Brooks'/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH=$PATH:/usr/local/go/bin
+source /home/abrooks/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

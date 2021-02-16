@@ -1,15 +1,15 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-fpath+=$HOME/.zsh/pure
+#fpath+=$HOME/.zsh/pure
 # Path to your oh-my-zsh installation.
-export ZSH="/home/abrooks/.oh-my-zsh"
+export ZSH="/root/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME=""
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -69,24 +69,25 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git terraform docker golang)
 
 source $ZSH/oh-my-zsh.sh
 autoload -U promptinit; promptinit
 
 # optionally define some options
 # PURE_CMD_MAX_EXEC_TIME=10
-#
+
+#PURE_PROMPT_SYMBOL='🧠>'
 # # change the path color
-zstyle :prompt:pure:path color white
+#zstyle :prompt:pure:path color white
 #
 # # change the color for both `prompt:success` and `prompt:error`
-zstyle ':prompt:pure:prompt:*' color cyan
+#zstyle ':prompt:pure:prompt:*' color cyan
 #
 # # turn on git stash status
-zstyle :prompt:pure:git:stash show yes
+#zstyle :prompt:pure:git:stash show yes
 #
-prompt pure
+#prompt pure
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -100,7 +101,6 @@ prompt pure
 # else
 #   export EDITOR='mvim'
 # fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -115,4 +115,6 @@ prompt pure
 LS_COLORS='ow=01;36;40'
 export LS_COLORS
 export PATH=$PATH:/usr/local/go/bin
-source /home/abrooks/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /root/.bashrc
+source /root/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+SPACESHIP_CHAR_PREFIX="🧠"

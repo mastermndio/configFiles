@@ -6,13 +6,15 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set cursorcolumn
+:set cursorline
 
 " Leader remap
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
 " NERDTree customizations
-nnoremap <Leader>f :NERDTreeToggle<Enter>
+nnoremap <Leader>n :NERDTreeToggle<Enter>
 let NERDTreeQuitOnOpen = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1

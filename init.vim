@@ -46,8 +46,7 @@ Plug 'unblevable/quick-scope'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'pangloss/vim-javascript'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'https://github.com/chrisbra/Colorizer'
-
+ 
 call plug#end()
  
 colorscheme dracula

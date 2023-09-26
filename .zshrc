@@ -27,8 +27,12 @@ export NVM_DIR="$HOME/.nvm"
 #########################
 # Google Cloud Platform #
 #########################
-export GOOGLE_APPLICATION_CREDENTIALS="/home/mastermnd/GCP_KEYS/endless-apogee-352403-8b8018805c6b.json"
+export GOOGLE_APPLICATION_CREDENTIALS="/home/abrooks/.config/gcloud/cerebro-dev-358301.json"
 
+########################
+#       Exercism       #
+########################
+export PATH=~/bin:$PATH
 
 ########################
 # Load Starship Prompt #
@@ -37,7 +41,5 @@ eval "$(starship init zsh)"
 SPACESHIP_RUBY_SHOW=false
 
 
-
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-#export PATH="$PATH:$HOME/.rvm/bin"
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin

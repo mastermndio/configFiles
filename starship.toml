@@ -17,5 +17,6 @@ style = "bold yellow"
 format = "on [$symbol$profile]($style) "
 style = "bold blue"
 symbol = "❤️"
+
 [aws.profile_aliases]
 Enterprise_Naming_Scheme-voidstars = 'void**'
